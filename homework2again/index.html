@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tuxedo Cat Coffee</title>
+    <link type="text/css" rel="stylesheet" href="cafe.css">
+    <script>
+        function qzc1(x){
+            x.src="images/scone_info.jpg";
+        }
+        function q1(x){
+            x.src="images/scone.jpg";
+        }
+        function qzc2(x){
+            x.src="images/biscotti_info.jpg";
+        }
+        function q2(x){
+            x.src="images/biscotti.jpg";
+        }
+        function qzc3(x){
+            x.src="images/coffee_info.jpg";
+        }
+        function q3(x){
+            x.src="images/coffee.jpg";
+        }
+        function qzc4(x){
+            x.src="images/cappuccino_info.jpg";
+        }
+        function q4(x){
+            x.src="images/cappuccino.jpg";
+        }
+        function qzc5(x){
+            x.src="images/latte_info.jpg";
+        }
+        function q5(x){
+            x.src="images/latte.jpg";
+        }
+        function qzc6(x){
+            x.src="images/espresso_info.jpg";
+        }
+        function q6(x){
+            x.src="images/espresso.jpg";
+        }
+    </script>
+    <script src="cafe.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Tuxedo Cat Coffee"/>
+    </header>
+    <main>
+        <form id="order_form" name="order_form" action="checkout.html" method="get">
+            <section id="menu">
+            	<h2>Menu</h2>
+            	<p>Click an item to add it to your order.</p>
+            	<ul>
+            		<li><a href="#"><img onmouseover="qzc6(this)" onmouseout="q6(this)"  id="QZC1"  src="images/espresso.jpg" alt="espresso"/></a></li>
+            		<li><a href="#"><img onmouseover="qzc5(this)" onmouseout="q5(this)"  id="QZC2"  src="images/latte.jpg" alt="latte"/></a></li>
+            		<li><a href="#"><img onmouseover="qzc4(this)" onmouseout="q4(this)"  id="QZC3"  src="images/cappuccino.jpg" alt="cappuccino"/></a></li>
+            		<li><a href="#"><img  onmouseover="qzc3(this)" onmouseout="q3(this)" id="QZC4"  src="images/coffee.jpg" alt="coffee"/></a></li>
+            		<li><a href="#"><img  onmouseover="qzc2(this)" onmouseout="q2(this)" id="QZC5"  src="images/biscotti.jpg" alt="biscotti"/></a></li>
+            		<li><a href="#"><img  onmouseover="qzc1(this)" onmouseout="q1(this)" id="QZC6"  src="images/scone.jpg" alt="scone"/></a></li>
+            	</ul>
+            </section>
+            <section>
+            	<h2>Your Order</h2>
+            	<section>
+            		<select id="order" name="order" size="6">
+            		</select>
+            		<p id="total"></p>            		
+           		</section>
+            	<section id="buttons">
+           			<input type="submit" name="place_order" id="place_order" value="Place Order">
+           			<input type="reset" name="clear_order" id="clear_order" value="Clear Order">				       		
+            	</section>
+            </section>   
+        </form>
+    </main> 
+</body>
+</html>
